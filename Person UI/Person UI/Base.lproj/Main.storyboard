@@ -18,15 +18,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tU-bU-eXH">
-                                <rect key="frame" x="166" y="60" width="55" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tU-bU-eXH">
+                                <rect key="frame" x="20" y="30" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBE-c7-UxS">
+                                <rect key="frame" x="8" y="112" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiT-on-hfM">
+                                <rect key="frame" x="35" y="71" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter name here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SZX-An-vga">
+                                <rect key="frame" x="80" y="25.5" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="oQf-nZ-tPl">
+                                <rect key="frame" x="80" y="108.5" width="117" height="29"/>
+                                <segments>
+                                    <segment title="Male"/>
+                                    <segment title="Female"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXn-i3-vTZ">
+                                <rect key="frame" x="357" y="71" width="18" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="21" minValue="0.0" maxValue="130" translatesAutoresizingMaskIntoConstraints="NO" id="Uqu-M8-6iq">
+                                <rect key="frame" x="78" y="66.5" width="271" height="31"/>
+                            </slider>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5gr-hp-BMV">
+                                <rect key="frame" x="0.0" y="151.5" width="375" height="515.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5gr-hp-BMV" secondAttribute="bottom" id="3ke-Bq-7pq"/>
+                            <constraint firstItem="kBE-c7-UxS" firstAttribute="top" secondItem="IiT-on-hfM" secondAttribute="bottom" constant="20" id="7wO-dp-Dhi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5gr-hp-BMV" secondAttribute="trailing" id="8NA-Ro-CiF"/>
+                            <constraint firstItem="SZX-An-vga" firstAttribute="leading" secondItem="9tU-bU-eXH" secondAttribute="trailing" constant="10" id="9fs-8E-6ph"/>
+                            <constraint firstItem="IiT-on-hfM" firstAttribute="trailing" secondItem="9tU-bU-eXH" secondAttribute="trailing" id="B2y-AG-5mX"/>
+                            <constraint firstItem="kBE-c7-UxS" firstAttribute="trailing" secondItem="IiT-on-hfM" secondAttribute="trailing" id="IIC-cL-GSN"/>
+                            <constraint firstItem="5gr-hp-BMV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jdx-dT-HaL"/>
+                            <constraint firstItem="SZX-An-vga" firstAttribute="centerY" secondItem="9tU-bU-eXH" secondAttribute="centerY" id="Ji4-iL-PIr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SZX-An-vga" secondAttribute="trailing" id="SQo-L5-qk6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tXn-i3-vTZ" secondAttribute="trailing" id="Zwb-ba-z4D"/>
+                            <constraint firstItem="5gr-hp-BMV" firstAttribute="top" secondItem="oQf-nZ-tPl" secondAttribute="bottom" constant="15" id="c4a-IH-DUC"/>
+                            <constraint firstItem="9tU-bU-eXH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cih-UK-8c9"/>
+                            <constraint firstItem="9tU-bU-eXH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="dsv-37-KfG"/>
+                            <constraint firstItem="Uqu-M8-6iq" firstAttribute="centerY" secondItem="IiT-on-hfM" secondAttribute="centerY" id="iTp-GQ-xpn"/>
+                            <constraint firstItem="Uqu-M8-6iq" firstAttribute="leading" secondItem="IiT-on-hfM" secondAttribute="trailing" constant="10" id="lVn-Hf-hPM"/>
+                            <constraint firstItem="IiT-on-hfM" firstAttribute="top" secondItem="9tU-bU-eXH" secondAttribute="bottom" constant="20" id="mzg-fQ-doA"/>
+                            <constraint firstItem="tXn-i3-vTZ" firstAttribute="centerY" secondItem="IiT-on-hfM" secondAttribute="centerY" id="puk-Lu-zZo"/>
+                            <constraint firstItem="oQf-nZ-tPl" firstAttribute="leading" secondItem="kBE-c7-UxS" secondAttribute="trailing" constant="10" id="r9l-xp-anA"/>
+                            <constraint firstItem="oQf-nZ-tPl" firstAttribute="centerY" secondItem="kBE-c7-UxS" secondAttribute="centerY" id="xlB-0h-vzs"/>
+                            <constraint firstItem="tXn-i3-vTZ" firstAttribute="leading" secondItem="Uqu-M8-6iq" secondAttribute="trailing" constant="10" id="zfP-dQ-RTg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
